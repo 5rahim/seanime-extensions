@@ -12,7 +12,7 @@ function init() {
         e.next()
     })
 
-    $app.onDiscordPresenceAnimeActivityRequested((e) => {
+    $app.onDiscordPresenceMangaActivityRequested((e) => {
         e.smallImage = ""
         e.smallText = ""
         e.next()

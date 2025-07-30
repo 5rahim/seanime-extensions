@@ -1,7 +1,7 @@
 {
   "id": "discord-rpc-hide-logo",
   "name": "Discord RPC Hide Logo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/discord-rpc-hide-logo/discord-rpc-hide-logo.json",
   "language": "typescript",
   "type": "plugin",
