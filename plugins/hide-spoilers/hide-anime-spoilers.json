@@ -1,7 +1,7 @@
 {
   "id": "hide-anime-spoilers-seanime",
   "name": "Hide Anime Spoilers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/hide-spoilers/hide-anime-spoilers.json",
   "language": "typescript",
   "type": "plugin",
