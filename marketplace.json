@@ -142,5 +142,16 @@
     "author": "Faddix",
     "icon": "https://raw.githubusercontent.com/faddix/anime-notes/main/src/notepad.png",
     "lang": "multi"
+  },
+  {
+    "id": "discord-rpc-hide-logo",
+    "name": "Discord RPC Hide Logo",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/discord-rpc-hide-logo/discord-rpc-hide-logo.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Hide the Seanime logo in Discord Rich Presence.",
+    "author": "Seanime",
+    "icon": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/discord-rpc-hide-logo/icon.png",
+    "lang": "multi"
   }
 ]
