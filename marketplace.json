@@ -153,5 +153,16 @@
     "author": "Seanime",
     "icon": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/discord-rpc-hide-logo/icon.png",
     "lang": "multi"
+  },
+  {
+    "id": "banner-remover",
+    "name": "Banner Remover",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Banner-Remover/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Hide banner images on various pages.",
+    "author": "Bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Banner-Remover/main/src/Icons/Icon.png",
+    "lang": "multi"
   }
 ]
