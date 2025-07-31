@@ -164,5 +164,16 @@
     "author": "Bas1874",
     "icon": "https://raw.githubusercontent.com/Bas1874/Banner-Remover/main/src/Icons/Icon.png",
     "lang": "multi"
+  },
+  {
+    "id": "anicrush",
+    "name": "Anicrush",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/anicrush/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Anicrush is an online stream provider for both sub and dub with soft subs.",
+    "author": "Thekingcrusher",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/anicrush/logo.png",
+    "lang": "en"
   }
 ]
