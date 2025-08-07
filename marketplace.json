@@ -175,5 +175,16 @@
     "author": "Thekingcrusher",
     "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/anicrush/logo.png",
     "lang": "en"
+  },
+  {
+    "id": "setwatched",
+    "name": "SetWatched",
+    "manifestURI": "https://raw.githubusercontent.com/RhythmParadox/SetWatched/refs/heads/master/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Quickly set an anime or a specific episode to watched on AniList, and input a rating if completed.",
+    "author": "./Zzzz",
+    "icon": "",
+    "lang": "multi"
   }
 ]
