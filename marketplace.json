@@ -182,7 +182,7 @@
     "manifestURI": "https://raw.githubusercontent.com/RhythmParadox/SetWatched/refs/heads/master/manifest.json",
     "language": "typescript",
     "type": "plugin",
-    "description": "Quickly set an anime or a specific episode to watched on AniList, and input a rating if completed.",
+    "description": "Adds a right-click option to set an anime or a specific episode to watched, and input a rating if completed.",
     "author": "./Zzzz",
     "icon": "",
     "lang": "multi"
