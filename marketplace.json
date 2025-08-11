@@ -186,5 +186,16 @@
     "author": "./Zzzz",
     "icon": "",
     "lang": "multi"
+  },
+  {
+    "id": "hanime-online-streaming",
+    "name": "hanime.tv",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/hanime/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Online streaming provider for Hanime.tv entries that are available on AniList.",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/hanime/favicon.png",
+    "lang": "en"
   }
 ]
