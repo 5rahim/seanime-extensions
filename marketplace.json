@@ -197,5 +197,27 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/hanime/favicon.png",
     "lang": "en"
+  },
+  {
+    "id": "hianime",
+    "name": "HiAnime",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/hianime/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "HiAnime is an online stream provider for both sub and dub with soft subs.",
+    "author": "Thekingcrusher",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/hianime/logo.png",
+    "lang": "en"
+  },
+  {
+    "id": "toonanime-online-streaming",
+    "name": "ToonAnime",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/toonanime/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "ToonAnime est une extension pour regarder des anime en français (VF et VOSTFR).",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/toonanime/favicon.png",
+    "lang": "fr"
   }
 ]
