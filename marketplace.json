@@ -219,5 +219,27 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/toonanime/favicon.png",
     "lang": "fr"
+  },
+  {
+    "id": "acg-rip-provider",
+    "name": "ACG.RIP",
+    "description": "Fetches torrents from acg.rip.",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/ACG.RIP-Torrent-Provider-Seanime/refs/heads/main/src/manifest.json",
+    "author": "Bas1874",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "multi",
+    "icon": "https://raw.githubusercontent.com/Bas1874/ACG.RIP-Torrent-Provider-Seanime/main/src/icons/images.jpeg"
+  },
+  {
+    "id": "Tokyo-Toshokan-Provider",
+    "name": "Tokyo Toshokan",
+    "description": "Fetches torrents from Tokyo-Toshokan.",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Tokyotosho-Torrent-Provider-Seanime/main/src/tokyotosho/manifest.json",
+    "author": "Bas1874",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "multi",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Tokyotosho-Torrent-Provider-Seanime/main/src/icons/icon.png"
   }
 ]
