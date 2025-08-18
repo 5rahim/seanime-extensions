@@ -252,5 +252,17 @@
     "language": "typescript",
     "lang": "multi",
     "icon": "https://raw.githubusercontent.com/Bas1874/Tokyotosho-Torrent-Provider-Seanime/main/src/icons/icon.png"
+  },
+  {
+    "id": "darkmahou-provider",
+    "name": "DarkMahou",
+    "description": "Provedor de torrents de anime do site DarkMahou.org com busca inteligente e detecção corrigida de batches",
+    "manifestURI": "https://raw.githubusercontent.com/Jhoorodre/seanime-provider/refs/heads/master/src/darkmahou/darkmahou-provider.json",
+    "author": "jhoorodr",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "pt-BR",
+    "icon": "https://raw.githubusercontent.com/Jhoorodre/seanime-provider/master/src/icon/icon.png",
+    "payloadURI": "https://raw.githubusercontent.com/Jhoorodre/seanime-provider/refs/heads/master/src/darkmahou/darkmahou-provider.ts"
   }
 ]
