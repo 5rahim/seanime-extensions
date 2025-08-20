@@ -189,11 +189,11 @@
   },
   {
     "id": "hanime-online-streaming",
-    "name": "hanime.tv",
+    "name": "hanime.tv (18+)",
     "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/hanime/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
-    "description": "Online streaming provider for Hanime.tv entries that are available on AniList.",
+    "description": "Online streaming provider for Hanime.tv hentai that is available on AniList.",
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/hanime/favicon.png",
     "lang": "en"
