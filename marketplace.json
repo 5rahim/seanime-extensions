@@ -264,5 +264,17 @@
     "lang": "pt-BR",
     "icon": "https://raw.githubusercontent.com/Jhoorodre/seanime-provider/master/src/icon/icon.png",
     "payloadURI": "https://raw.githubusercontent.com/Jhoorodre/seanime-provider/refs/heads/master/src/darkmahou/darkmahou-provider.ts"
+  },
+  {
+    "id": "advanced-search",
+    "name": "Always Advanced Search",
+    "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Make the search button open the advanced search page.",
+    "author": "SyntaxSama",
+    "icon": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/2015046.png",
+    "lang": "multi",
+    "payloadURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/advsearch.ts"
   }
 ]
