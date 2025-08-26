@@ -322,5 +322,29 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/french-anime/favicon.png",
     "lang": "fr"
+  },
+  {
+    "id": "Watch-Next",
+    "name": "Watch Next",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Watch-Next-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Create an ordered list of anime to watch next from your planning list",
+    "author": "bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Next-Seanime/refs/heads/main/src/icon/icon.png",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/Bas1874/Watch-Next-Seanime/refs/heads/main/src/Watch-Next.ts"
+  },
+  {
+    "id": "SubsPlease-Provider",
+    "name": "SubsPlease",
+    "description": "Fetches torrents from SubsPlease.org",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/manifest.json",
+    "author": "Bas1874",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "multi",
+    "icon": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/icon/icon.jpeg",
+    "payloadURI": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/SubsPlease.ts"
   }
 ]
