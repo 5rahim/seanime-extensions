@@ -358,5 +358,18 @@
     "icon": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/icons/icon.png",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/Dub-Schedule.ts"
+  },
+  {
+    "id": "watch-order",
+    "name": "Watch Order",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Displays the watch order for an anime series on the anime page.",
+    "author": "Bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/scr/icons/AnimeWatchOrderV2.png",
+    "website": "https://github.com/Bas1874/Watch-Order-Seanime",
+    "lang": "multi",
+    "payloadURI": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/src/Watch-Order.ts"
   }
 ]
