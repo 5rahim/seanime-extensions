@@ -371,5 +371,16 @@
     "website": "https://github.com/Bas1874/Watch-Order-Seanime",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/src/Watch-Order.ts"
+  },
+  {
+    "id": "anime-sama-online-streaming",
+    "name": "Anime Sama",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-sama/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Extension en français pour regarder des anime dans le catalogue du site anime-sama.com.",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-sama/favicon.png",
+    "lang": "fr"
   }
 ]
