@@ -330,7 +330,7 @@
     "language": "typescript",
     "type": "plugin",
     "description": "Create an ordered list of anime to watch next from your planning list",
-    "author": "bas1874",
+    "author": "Bas1874",
     "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Next-Seanime/refs/heads/main/src/icon/icon.png",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/Watch-Next-Seanime/refs/heads/main/src/Watch-Next.ts"
@@ -346,5 +346,17 @@
     "lang": "multi",
     "icon": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/icon/icon.jpeg",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/SubsPlease.ts"
+  },
+  {
+    "id": "Dub-Schedule",
+    "name": "Dub Schedule",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Adds dubbed anime to the schedule page.",
+    "author": "Bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/icons/icon.png",
+    "lang": "multi",
+    "payloadURI": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/Dub-Schedule.ts"
   }
 ]
