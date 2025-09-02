@@ -367,7 +367,7 @@
     "type": "plugin",
     "description": "Displays the watch order for an anime series on the anime page.",
     "author": "Bas1874",
-    "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/scr/icons/AnimeWatchOrderV2.png",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/scr/icons/AnimeWatchOrderV4.png",
     "website": "https://github.com/Bas1874/Watch-Order-Seanime",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/src/Watch-Order.ts"
