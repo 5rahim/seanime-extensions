@@ -382,5 +382,16 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-sama/favicon.png",
     "lang": "fr"
+  },
+  {
+    "id": "oppai-stream-online-streaming",
+    "name": "Oppai Stream (18+)",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/oppai-stream/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Watch hentai from the oppai.stream catalog that is available on AniList.",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/oppai-stream/favicon.png",
+    "lang": "en"
   }
 ]
