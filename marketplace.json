@@ -393,5 +393,16 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/oppai-stream/favicon.png",
     "lang": "en"
+  },
+  {
+    "id": "anime-ultra-online-streaming",
+    "name": "Anime Ultra",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-ultra/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Extension en français pour regarder des anime dans le catalogue du site animesultra.org.",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-ultra/favicon.png",
+    "lang": "fr"
   }
 ]
