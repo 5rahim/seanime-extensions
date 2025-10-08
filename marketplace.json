@@ -404,5 +404,16 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-ultra/favicon.png",
     "lang": "fr"
+  },
+  {
+    "id": "ilcorsaronero",
+    "name": "IlCorsaroNero",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "Integrates IlCorsaroNero as a torrent streaming provider.",
+    "author": "Faddix",
+    "icon": "https://raw.githubusercontent.com/faddix/seanime-iCN/main/src/iCN-logo.png",
+    "lang": "it",
+    "manifestURI": "https://raw.githubusercontent.com/faddix/seanime-iCN//main/ilcorsaronero.json"
   }
 ]
