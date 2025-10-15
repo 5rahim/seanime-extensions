@@ -415,5 +415,15 @@
     "icon": "https://raw.githubusercontent.com/faddix/seanime-iCN/main/src/iCN-logo.png",
     "lang": "it",
     "manifestURI": "https://raw.githubusercontent.com/faddix/seanime-iCN//main/ilcorsaronero.json"
+  },
+  {
+    "id": "AnimeUnity",
+    "name": "AnimeUnity",
+    "description": "AnimeUnity is an online streaming provider for animes dubbed/subbed in Italian",
+    "manifestURI": "https://raw.githubusercontent.com/kRYstall9/Seanime-streaming-providers/refs/heads/main/src/AnimeUnity/animeunity.json",
+    "author": "kRYstall9",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "it"
   }
 ]
