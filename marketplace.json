@@ -460,5 +460,16 @@
     "website": "https://x.com/mlb__11",
     "lang": "fr",
     "payloadURI": "https://raw.githubusercontent.com/MLB-11/YGGTorrentSeanime/refs/heads/main/YGGTorrent.ts"
+  },
+  {
+    "id": "mangabuddy",
+    "name": "MangaBuddy",
+    "description": "MangaBuddy is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangabuddy/manifest.json",
+    "author": "pal",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangabuddy/provider.js"
   }
 ]
