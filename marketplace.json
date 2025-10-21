@@ -471,5 +471,29 @@
     "language": "javascript",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangabuddy/provider.js"
+  },
+  {
+    "id": "animeflv",
+    "name": "AnimeFLV",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeFLV/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider for spanish subbed anime.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeFLV/icon.ico",
+    "lang": "es",
+    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/refs/heads/master/src/AnimeFLV/index.ts"
+  },
+  {
+    "id": "manhwaweb",
+    "name": "ManhwaWeb",
+    "description": "Spanish manga and manhwa provider.",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/manifest.json",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es",
+    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/index.ts"
   }
 ]
