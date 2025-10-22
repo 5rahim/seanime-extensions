@@ -506,5 +506,16 @@
     "author": "jabifx",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/refs/heads/master/src/AniZone/index.ts"
+  },
+  {
+    "id": "mangapark",
+    "name": "MangaPark",
+    "description": "Access manga from mangapark.net",
+    "manifestURI": "https://raw.githubusercontent.com/Ari-03/mangapark/refs/heads/main/mangapark.json",
+    "author": "ari___",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/Ari-03/mangapark/refs/heads/main/provider.ts"
   }
 ]
