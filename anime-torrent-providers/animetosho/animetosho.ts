@@ -30,7 +30,7 @@ interface AnimeToshoTorrent {
     website_url: string;
 }
 
-class Provider3 {
+class Provider {
     private jsonFeedUrl = "https://feed.animetosho.org/json"
 
     public getSettings(): AnimeProviderSettings {
