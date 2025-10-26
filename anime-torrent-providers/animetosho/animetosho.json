@@ -2,11 +2,11 @@
   "id": "animetosho",
   "name": "Animetosho",
   "description": "Animetosho provider for english-translated torrents",
-  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/animetoshop/animetoshop.json",
+  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/animetosho/animetosho.json",
   "version": "1.0.0",
   "author": "Seanime",
   "type": "anime-torrent-provider",
-  "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/animetoshop.png",
+  "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/animetosho.png",
   "language": "typescript",
   "lang": "multi",
   "userConfig": {
