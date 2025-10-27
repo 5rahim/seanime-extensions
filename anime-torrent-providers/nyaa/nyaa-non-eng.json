@@ -2,7 +2,7 @@
   "id": "nyaa-non-eng",
   "name": "Nyaa (Non-English)",
   "description": "Nyaa provider for non-english torrents",
-  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa.json",
+  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa-non-eng.json",
   "version": "1.0.0",
   "author": "Seanime",
   "type": "anime-torrent-provider",
