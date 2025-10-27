@@ -2,7 +2,7 @@
   "id": "nyaa-sukebei",
   "name": "Nyaa Sukebei",
   "description": "Nyaa provider for hentai torrents",
-  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa-sukebei.json",
+  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa-sukebei/nyaa-sukebei.json",
   "version": "1.0.0",
   "author": "Seanime",
   "type": "anime-torrent-provider",
