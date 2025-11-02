@@ -587,5 +587,85 @@
     "lang": "multi",
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/icon.ico",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/main.ts"
+  },
+  {
+    "id": "animetosho",
+    "name": "Animetosho",
+    "description": "Animetosho provider for english-translated torrents",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/animetosho/animetosho.json",
+    "author": "Seanime",
+    "type": "anime-torrent-provider",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/animetosho.png",
+    "language": "typescript",
+    "lang": "multi"
+  },
+  {
+    "id": "nyaa",
+    "name": "Nyaa",
+    "description": "Nyaa provider for english-translated torrents",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa.json",
+    "author": "Seanime",
+    "type": "anime-torrent-provider",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/nyaa.png",
+    "language": "typescript",
+    "lang": "multi"
+  },
+  {
+    "id": "seadex",
+    "name": "SeaDex",
+    "description": "SeaDex provider for high quality torrents",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/seadex/seadex.json",
+    "author": "Seanime",
+    "type": "anime-torrent-provider",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/seadex.png",
+    "language": "typescript",
+    "lang": "multi"
+  },
+  {
+    "id": "nyaa-non-eng",
+    "name": "Nyaa (Non-English)",
+    "description": "Nyaa provider for non-english torrents",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa-non-eng.json",
+    "author": "Seanime",
+    "type": "anime-torrent-provider",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/nyaa.png",
+    "language": "typescript",
+    "lang": "multi"
+  },
+  {
+    "id": "nyaa-sukebei",
+    "name": "Nyaa Sukebei",
+    "description": "Nyaa provider for hentai torrents",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa-sukebei/nyaa-sukebei.json",
+    "author": "Seanime",
+    "type": "anime-torrent-provider",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/nyaa.png",
+    "language": "typescript",
+    "lang": "multi"
+  },
+  {
+    "id": "mangapill",
+    "name": "Mangapill",
+    "version": "1.0.0",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/manga-providers/mangapill/mangapill.json",
+    "language": "typescript",
+    "type": "manga-provider",
+    "description": "",
+    "author": "Seanime",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/mangapill.png",
+    "website": "",
+    "lang": "en"
+  },
+  {
+    "id": "weebcentral",
+    "name": "WeebCentral",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/manga-providers/weebcentral/weebcentral.json",
+    "language": "typescript",
+    "type": "manga-provider",
+    "description": "",
+    "author": "Seanime",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/weebcentral.png",
+    "website": "",
+    "lang": "en"
   }
 ]
