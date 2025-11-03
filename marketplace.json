@@ -519,13 +519,13 @@
     "payloadURI": "https://raw.githubusercontent.com/Ari-03/mangapark/refs/heads/main/provider.ts"
   },
   {
-    "id": "animepahe-si-patch",
+    "id": "animepahe",
     "name": "Animepahe",
     "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
-    "description": "Animepahe extension based on the built-in extension, maintained by Skaiya",
-    "author": "Seanime",
+    "description": "Animepahe streaming provider",
+    "author": "ItsSkaiya",
     "lang": "en"
   },
   {
