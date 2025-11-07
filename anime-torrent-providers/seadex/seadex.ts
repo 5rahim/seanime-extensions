@@ -79,6 +79,27 @@ class Provider {
         return this.findTorrents(options.media)
     }
 
+    private async findTorrents(media: AnimeSearchOptions["media"]): Promise<AnimeTorrent[]> {
+        if (!media || !media.id) {
+            console.log("SeaDex: Media ID is missing, cannot search.")
+            return []
+        }
+
+        try {
+            const title = media.romajiTitle || media.englishTitle || "Unknown Title"
+            // Call the internal fetchTorrents method
+            const seadexTorrents = await this.fetchTorrents(media.id, title)
+
+            // Concurrently scrape and convert all torrents
+            const promises = seadexTorrents.map(t => this.toAnimeTorrent(t))
+            return await Promise.all(promises)
+        }
+        catch (error) {
+            console.error("SeaDex: Error in findTorrents: " + (error as Error).message)
+            return []
+        }
+    }
+
     public async getTorrentInfoHash(torrent: AnimeTorrent): Promise<string> {
         return torrent.infoHash || ""
     }
@@ -108,27 +129,6 @@ class Provider {
         catch (error) {
             console.error("SeaDex: Error fetching magnet link: " + (error as Error).message)
             throw new Error("Could not fetch magnet link for: " + torrent.name)
-        }
-    }
-
-    private async findTorrents(media: AnimeSearchOptions["media"]): Promise<AnimeTorrent[]> {
-        if (!media || !media.id) {
-            console.log("SeaDex: Media ID is missing, cannot search.")
-            return []
-        }
-
-        try {
-            const title = media.romajiTitle || media.englishTitle || "Unknown Title"
-            // Call the internal fetchTorrents method
-            const seadexTorrents = await this.fetchTorrents(media.id, title)
-
-            // Concurrently scrape and convert all torrents
-            const promises = seadexTorrents.map(t => this.toAnimeTorrent(t))
-            return await Promise.all(promises)
-        }
-        catch (error) {
-            console.error("SeaDex: Error in findTorrents: " + (error as Error).message)
-            return []
         }
     }
 
@@ -246,12 +246,12 @@ class Provider {
                     ret.name = title
                 }
 
-                let seeders = 0
+                let seeders = -1
                 let leechers = 0
                 let downloads = 0
                 let formattedSize = ""
 
-                $(".panel-body .row div.col-md-5").each((i, el) => {
+                $(".panel-body .row div.col-md-1").each((i, el) => {
                     const text = el.text().trim()
                     const valueEl = el.next()
                     if (!valueEl) return
@@ -259,7 +259,7 @@ class Provider {
                     const value = valueEl.text().trim()
 
                     if (text === "Seeders:") {
-                        seeders = parseInt(value) || 0
+                        seeders = parseInt(value) || -1
                     } else if (text === "Leechers:") {
                         leechers = parseInt(value) || 0
                     } else if (text === "Downloads:") {
@@ -273,7 +273,7 @@ class Provider {
                 ret.leechers = leechers
                 ret.downloadCount = downloads
                 ret.formattedSize = formattedSize
-                ret.size = 1
+                ret.size = 0
 
                 ret.downloadUrl = $("a.card-footer-item[href*='/download/']").attr("href") || ""
                 if (ret.downloadUrl && !ret.downloadUrl.startsWith("http")) {
