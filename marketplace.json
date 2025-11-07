@@ -667,5 +667,40 @@
     "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/weebcentral.png",
     "website": "",
     "lang": "en"
+  },
+  {
+    "id": "mangadex",
+    "name": "Mangadex",
+    "manifestURI": "https://raw.githubusercontent.com/HyperKiko/seanime-extensions/main/src/mangadex/mangadex.json",
+    "language": "typescript",
+    "type": "manga-provider",
+    "description": "",
+    "author": "kiko",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/mangadex.png",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/HyperKiko/seanime-extensions/main/src/mangadex/mangadex.ts"
+  },
+  {
+    "id": "weebdex",
+    "name": "WeebDex",
+    "description": "WeebDex manga provider for Seanime - access manga from weebdex.org",
+    "manifestURI": "https://raw.githubusercontent.com/Ari-03/weebdex/refs/heads/main/weebdex.json",
+    "author": "ari___",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/Ari-03/weebdex/refs/heads/main/provider.ts"
+  },
+  {
+    "id": "animeav1",
+    "name": "AnimeAV1",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider with hard subs and dubs in Spanish.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/icon.png",
+    "lang": "es",
+    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/main.ts"
   }
 ]
