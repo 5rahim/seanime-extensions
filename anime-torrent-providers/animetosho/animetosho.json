@@ -1,12 +1,12 @@
 {
   "id": "animetosho",
   "name": "Animetosho",
-  "description": "Animetosho provider for english-translated torrents",
-  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/animetosho/animetosho.json",
-  "version": "1.0.0",
-  "author": "Seanime",
+  "description": "Animetosho provider for torrents. High accuracy for search & auto-select.",
+  "manifestURI": "https://island.clap.ing/api/extensions/anime-torrent-providers/animetosho/animetosho.json",
+  "version": "1.0.1",
+  "author": "Island",
   "type": "anime-torrent-provider",
-  "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/animetosho.png",
+  "icon": "https://island.clap.ing/api/extensions/icons/animetosho.png",
   "language": "typescript",
   "lang": "multi",
   "userConfig": {

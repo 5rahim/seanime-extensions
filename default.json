@@ -1,11 +1,11 @@
 {
   "urls": [
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/animetosho/animetosho.json",
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa.json",
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/seadex/seadex.json",
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa/nyaa-non-eng.json",
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/anime-torrent-providers/nyaa-sukebei/nyaa-sukebei.json",
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/manga-providers/mangapill/mangapill.json",
-    "https://raw.githubusercontent.com/5rahim/seanime-extensions/refs/heads/main/manga-providers/weebcentral/weebcentral.json"
+    "https://island.clap.ing/api/extensions/anime-torrent-providers/animetosho/animetosho.json",
+    "https://island.clap.ing/api/extensions/anime-torrent-providers/nyaa/nyaa.json",
+    "https://island.clap.ing/api/extensions/anime-torrent-providers/seadex/seadex.json",
+    "https://island.clap.ing/api/extensions/anime-torrent-providers/nyaa/nyaa-non-eng.json",
+    "https://island.clap.ing/api/extensions/anime-torrent-providers/nyaa-sukebei/nyaa-sukebei.json",
+    "https://island.clap.ing/api/extensions/manga-providers/mangapill/mangapill.json",
+    "https://island.clap.ing/api/extensions/manga-providers/weebcentral/weebcentral.json"
   ]
 }
