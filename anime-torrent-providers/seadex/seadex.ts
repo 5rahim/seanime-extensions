@@ -273,7 +273,6 @@ class Provider {
                 ret.leechers = leechers
                 ret.downloadCount = downloads
                 ret.formattedSize = formattedSize
-                ret.size = 0
 
                 ret.downloadUrl = $("a.card-footer-item[href*='/download/']").attr("href") || ""
                 if (ret.downloadUrl && !ret.downloadUrl.startsWith("http")) {
