@@ -241,7 +241,7 @@ class Provider {
                 const html = await res.text()
                 const $ = LoadDoc(html)
 
-                const title = $("h3.panel-title").text().trim()
+                const title = $("h3.panel-title").first().text().trim()
                 if (title) {
                     ret.name = title
                 }
