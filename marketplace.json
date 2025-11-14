@@ -741,5 +741,17 @@
     "website": "",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/main.ts"
+  },
+  {
+    "id": "thepiratebay",
+    "name": "ThePiratebay",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/manifest.json",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "Adds ThePirateBay on Seanime as a torrent provider.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/icon.png",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/main.ts"
   }
 ]
