@@ -728,5 +728,18 @@
     "website": "",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/main.ts"
+  },
+  {
+    "id": "simkl",
+    "name": "Simkl",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/manifest.json",
+    "language": "typescript",
+    "type": "custom-source",
+    "description": "Implements SIMKL as a custom source.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/icon.ico",
+    "website": "",
+    "lang": "multi",
+    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/main.ts"
   }
 ]
