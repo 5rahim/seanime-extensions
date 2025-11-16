@@ -713,7 +713,7 @@
     "author": "bas1874",
     "icon": "https://raw.githubusercontent.com/Bas1874/Acgnx-Seanime/refs/heads/main/src/icon.png",
     "website": "https://github.com/Bas1874/Acgnx-Seanime",
-    "lang": "Chinese",
+    "lang": "zh",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/Acgnx-Seanime/refs/heads/main/src/Acgnx.ts"
   },
   {
@@ -778,5 +778,17 @@
     "language": "javascript",
     "lang": "id",
     "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/komiku/provider.js"
+  },
+  {
+    "id": "komikcast",
+    "name": "KomikCast",
+    "description": "KomikCast is an Indonesian manga provider",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/komikcast/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/komikcast.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "id",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/komikcast/provider.js"
   }
 ]
