@@ -766,5 +766,17 @@
     "website": "",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/main.ts"
+  },
+  {
+    "id": "komiku",
+    "name": "Komiku",
+    "description": "Komiku is an Indonesian manga provider",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/komiku/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/komiku.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "id",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/komiku/provider.js"
   }
 ]
