@@ -812,9 +812,33 @@
     "type": "plugin",
     "description": "Play Doom in Seanime",
     "author": "bas1874",
-    "icon": "https://github.com/Bas1874/Doom-Seanime/blob/main/icons/Icon2.png?raw=true",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Doom-Seanime/refs/heads/main/icons/Icon2.png",
     "website": "",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/Doom-Seanime/refs/heads/main/src/Doom.ts"
+  },
+  {
+    "id": "anilist-private",
+    "name": "Anilist Private",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/anilist-private.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Add functionality to private anime in AniList inside Seanime.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en"
+  },
+  {
+    "id": "mangaworldadult",
+    "name": "MangaWorldAdult",
+    "description": "MangaWorldAdult is an Italian manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/MangaWorldAdult/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/MangaWorld.jpeg",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "it",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/MangaWorldAdult/provider.ts"
   }
 ]
