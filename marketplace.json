@@ -853,5 +853,42 @@
     "website": "",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/KaganeSoruce/main.ts"
+  },
+  {
+    "id": "anilist-favorites",
+    "name": "Anilist Favorites",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/refs/heads/master/plugins/Anilist%20Favorites/anilist-favorites.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Add functionality to favorite an anime in AniList inside Seanime.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Favorites/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Favorites/provider.ts"
+  },
+  {
+    "id": "hentaiworld",
+    "name": "HentaiWorld",
+    "description": "HentaiWorld is an online streaming provider for subbed/dubbed Hentai in Italian",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/hentaiworld/manifest.json",
+    "author": "Pal",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "it",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/hentaiworld.png",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/hentaiworld/provider.ts"
+  },
+  {
+    "id": "hentaisaturn",
+    "name": "HentaiSaturn",
+    "description": "HentaiSaturn is an online streaming provider for subbed/dubbed Hentai in Italian",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/hentaisaturn/manifest.json",
+    "author": "Pal",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "it",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/hentaisaturn.png",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/hentaisaturn/provider.ts"
   }
 ]
