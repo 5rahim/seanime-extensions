@@ -890,5 +890,32 @@
     "lang": "it",
     "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/hentaisaturn.png",
     "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/hentaisaturn/provider.ts"
+  },
+  {
+    "id": "discord-rpc-hide-nsfw",
+    "name": "Discord RPC Hide NSFW",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Discord%20RPC%20Hide%20NSFW/discord-rpc-hide-nsfw.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Hide NSFW entries from appearing in Discord Rich Presence",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Discord%20RPC%20Hide%20NSFW/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Discord%20RPC%20Hide%20NSFW/provider.ts"
+  },
+  {
+    "id": "fancy-fonts",
+    "name": "Fancy Fonts",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Fancy%20Fonts/fancy-fonts.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Change the Seanime's app font.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Fancy%20Fonts/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payload": "",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Fancy%20Fonts/provider.ts"
   }
 ]
