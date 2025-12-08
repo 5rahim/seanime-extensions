@@ -1006,5 +1006,31 @@
     "website": "https://github.com/nnotwen/n-seanime-extensions",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/ShikimoriSync/provider.ts"
+  },
+  {
+    "id": "traktsync",
+    "name": "TraktSync",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/TraktSync/traktsync.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Sync your AniList progress to Trakt.tv",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/refs/heads/master/plugins/TraktSync/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/TraktSync/provider.ts"
+  },
+  {
+    "id": "kitsusync",
+    "name": "KitsuSync",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/KitsuSync/kitsusync.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Synchronize entry progress seamlessly with kitsu.app (formerly kitsu.io)",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/KitsuSync/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/KitsuSync/provider.ts"
   }
 ]
