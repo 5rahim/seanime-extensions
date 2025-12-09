@@ -1032,5 +1032,30 @@
     "website": "https://github.com/nnotwen/n-seanime-extensions",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/KitsuSync/provider.ts"
+  },
+  {
+    "id": "comix",
+    "name": "Comix",
+    "description": "Comix is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/comix/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/comix.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/comix/provider.js"
+  },
+  {
+    "id": "mangadex-source",
+    "name": "MangaDex",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/manifest.json",
+    "language": "typescript",
+    "type": "custom-source",
+    "description": "Implements MangaDex as a custom source.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/icon.ico",
+    "website": "",
+    "lang": "multi",
+    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/main.ts"
   }
 ]
