@@ -1082,5 +1082,31 @@
     "lang": "it",
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/icon.jpg",
     "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/main.ts"
+  },
+  {
+    "id": "myanimelistsync",
+    "name": "MyAnimeListSync",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/MyAnimeListSync/myanimelistsync.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Synchronize entry progress seamlessly with MyAnimeList.net",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/MyAnimeListSync/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/MyAnimeListSync/provider.ts"
+  },
+  {
+    "id": "custom-episode-metadata",
+    "name": "Custom Episode Metadata",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20Episode%20Metadata/custom-episode-metadata.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Customize episode metadata of anime in your AniList collection.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20Episode%20Metadata/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20Episode%20Metadata/provider.ts"
   }
 ]
