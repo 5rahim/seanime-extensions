@@ -1132,5 +1132,18 @@
     "author": "Thekingcrusher",
     "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/sudatchi/logo.ico",
     "lang": "en"
+  },
+  {
+    "id": "AniLiberty",
+    "name": "AniLiberty",
+    "manifestURI": "https://raw.githubusercontent.com/vsecoder/AniLiberty-Seanime/main/src/manifest.json",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "Fetches anime torrents from AniLiberty (aniliberty.top) API",
+    "author": "vsecoder",
+    "icon": "https://raw.githubusercontent.com/vsecoder/AniLiberty-Seanime/main/src/icon.png",
+    "website": "https://aniliberty.top",
+    "lang": "ru",
+    "payloadURI": "https://raw.githubusercontent.com/vsecoder/AniLiberty-Seanime/main/src/AniLiberty.ts"
   }
 ]
