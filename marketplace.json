@@ -1148,5 +1148,18 @@
     "website": "https://github.com/nnotwen/n-seanime-extensions",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20CSS%20Manager/provider.ts"
+  },
+  {
+    "id": "notes",
+    "name": "Notes",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/refs/heads/master/plugins/Notes/notes.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Save, sync, and manage personal thoughts across your anime and manga lists.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/refs/heads/master/plugins/Notes/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/refs/heads/master/plugins/Notes/provider.ts"
   }
 ]
