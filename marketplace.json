@@ -1145,5 +1145,18 @@
     "website": "https://aniliberty.top",
     "lang": "ru",
     "payloadURI": "https://raw.githubusercontent.com/vsecoder/AniLiberty-Seanime/main/src/AniLiberty.ts"
+  },
+  {
+    "id": "custom-css-manager",
+    "name": "Custom CSS Manager",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20CSS%20Manager/custom-css-manager.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Manage styles more efficiently",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20CSS%20Manager/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Custom%20CSS%20Manager/provider.ts"
   }
 ]
