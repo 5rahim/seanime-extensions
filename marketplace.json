@@ -36,18 +36,6 @@
     "lang": "multi"
   },
   {
-    "id": "cookie-clicker",
-    "name": "Cookie Clicker",
-    "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/Seanime-Cookie-Clicker/refs/heads/main/manifest.json",
-    "language": "typescript",
-    "type": "plugin",
-    "description": "A cookie clicker.",
-    "author": "SyntaxSama",
-    "icon": "",
-    "website": "",
-    "lang": "en"
-  },
-  {
     "id": "custom-cover-images",
     "name": "Custom Cover Images",
     "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/custom-cover-images/custom-cover-images.json",
@@ -268,14 +256,15 @@
   {
     "id": "always-advanced-search",
     "name": "Always Advanced Search",
-    "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/advanced-search/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "plugin",
-    "description": "Make the search button open the advanced search page.",
-    "author": "SyntaxSama",
-    "icon": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/2015046.png",
-    "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/advsearch.ts"
+    "description": "Always use advanced search instead of the basic search feature.",
+    "author": "SyntaxSama & Pal-droid",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/advanced-search/refs/heads/main/2015046.png",
+    "website": "",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/advanced-search/refs/heads/main/advsearch.ts"
   },
   {
     "id": "anime-news",
@@ -283,9 +272,10 @@
     "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/aninewsnet-seanime/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "plugin",
-    "description": "Read news from Anime News Network.",
-    "author": "SyntaxSama",
+    "description": "Get anime news in your Seanime instance!",
+    "author": "SyntaxSama & Pal-droid",
     "icon": "https://raw.githubusercontent.com/SyntaxSama/aninewsnet-seanime/refs/heads/main/animenewsnetwork.png",
+    "website": "",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/SyntaxSama/aninewsnet-seanime/refs/heads/main/animenews.ts"
   },
