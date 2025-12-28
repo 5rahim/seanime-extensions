@@ -1173,5 +1173,18 @@
     "lang": "de",
     "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/aniworld.png",
     "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/aniworld/provider.js"
+  },
+  {
+    "id": "simklsync",
+    "name": "SimklSync",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/SimklSync/simklsync.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Synchronize entry progress seamlessly with SIMKL",
+    "author": "nnotwen",
+    "icon": "https://eu.simkl.in/img_favicon/v2/favicon-192x192.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/SimklSync/provider.ts"
   }
 ]
