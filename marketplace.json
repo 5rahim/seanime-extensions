@@ -1189,7 +1189,7 @@
   },
   {
     "id": "rutracker-torapi",
-    "name": "RuTracker",,
+    "name": "RuTracker",
     "manifestURI": "https://raw.githubusercontent.com/cerXXXX/RuTrackerProvider-seanime-extension/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "anime-torrent-provider",
