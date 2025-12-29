@@ -1186,5 +1186,17 @@
     "website": "https://github.com/nnotwen/n-seanime-extensions",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/SimklSync/provider.ts"
+  },
+  {
+    "id": "rutracker-torapi",
+    "name": "RuTracker",
+    "manifestURI": "https://raw.githubusercontent.com/cerXXXX/RuTrackerProvider-seanime-extension/refs/heads/main/manifest.json",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "Поиск аниме-торрентов на RuTracker через TorAPI",
+    "author": "cerXXXX",
+    "icon": "https://raw.githubusercontent.com/cerXXXX/RuTrackerProvider-seanime-extension/refs/heads/main/favicon.ico",
+    "lang": "ru",
+    "payloadURI": "https://raw.githubusercontent.com/cerXXXX/RuTrackerProvider-seanime-extension/refs/heads/main/index.ts"
   }
 ]
