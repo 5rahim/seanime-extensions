@@ -1211,5 +1211,42 @@
     "website": "https://github.com/Bas1874/anilist-discussion/tree/main",
     "lang": "multi",
     "payloadURI": "https://raw.githubusercontent.com/Bas1874/anilist-discussion/refs/heads/main/src/Integrated%20Player/Anilist%20Discussions%20(Integrated%20Player).ts"
+  },
+  {
+    "id": "anilist-forums",
+    "name": "Anilist Forums",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Forums/anilist-forums.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Instant access to Anilist forum threads inside Seanime.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Forums/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "en",
+    "payloadURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Forums/provider.ts"
+  },
+  {
+    "id": "mynimeku",
+    "name": "MyNimeKu",
+    "description": "MyNimeKu is an online streaming provider for indonesian subs.",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/mynimeku/manifest.json",
+    "author": "Pal",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "id",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/mynimeku.jpg",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/mynimeku/provider.ts"
+  },
+  {
+    "id": "animapper-animevietsub",
+    "name": "AniMapper AnimeVietSub",
+    "description": "AnimeVietSub provider using AniMapper API for streaming anime with Vietnamese subtitles",
+    "manifestURI": "https://raw.githubusercontent.com/SinonCute/seanime-extensions/main/animapper-animevietsub/animapper-animevietsub.json",
+    "author": "Sinon (Hien Cao)",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "vi",
+    "payload": "",
+    "payloadURI": "https://raw.githubusercontent.com/SinonCute/seanime-extensions/main/animapper-animevietsub/provider.ts"
   }
 ]
