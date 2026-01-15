@@ -465,37 +465,37 @@
   {
     "id": "animeflv",
     "name": "AnimeFLV",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeFLV/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeFLV/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
     "description": "Online streaming provider for spanish subbed anime.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeFLV/icon.ico",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeFLV/icon.ico",
     "lang": "es",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/refs/heads/master/src/AnimeFLV/index.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/refs/heads/master/src/AnimeFLV/index.ts"
   },
   {
     "id": "manhwaweb",
     "name": "ManhwaWeb",
     "description": "Spanish manga and manhwa provider.",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/ManhwaWeb/manifest.json",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/ManhwaWeb/icon.png",
     "type": "manga-provider",
     "language": "typescript",
     "lang": "es",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/index.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/ManhwaWeb/index.ts"
   },
   {
     "id": "anizone",
     "name": "AniZone",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniZone/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AniZone/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
     "description": "Online streaming provider with soft subs and dubs.",
     "author": "jabifx",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/refs/heads/master/src/AniZone/index.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/refs/heads/master/src/AniZone/index.ts"
   },
   {
     "id": "mangapark",
@@ -521,7 +521,7 @@
   {
     "id": "ui-translation",
     "name": "UI Translation",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/UI-Translation/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/UI-Translation/manifest.json",
     "language": "typescript",
     "type": "plugin",
     "description": "Translates Seanime UI into different languages.",
@@ -529,19 +529,19 @@
     "icon": "",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/UI-Translation/ui-translation.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/UI-Translation/ui-translation.ts"
   },
   {
     "id": "animethemes",
     "name": "AnimeThemes Player",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeThemes/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeThemes/manifest.json",
     "language": "typescript",
     "type": "plugin",
     "description": "Displays an anime’s openings and endings (using animethemes.moe) directly on its page.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeThemes/icon.ico",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeThemes/icon.ico",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeThemes/animethemes.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeThemes/animethemes.ts"
   },
   {
     "id": "LN-reader",
@@ -557,26 +557,26 @@
   {
     "id": "mangafire",
     "name": "MangaFire",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaFire/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaFire/manifest.json",
     "language": "typescript",
     "type": "manga-provider",
     "description": "Multi language manga provider.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaFire/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaFire/icon.png",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaFire/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaFire/main.ts"
   },
   {
     "id": "anime-uniquestream",
     "name": "Anime UniqueStream",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeUniqueStream/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
     "description": "Online streaming provider with hard subs and dubs.",
     "author": "jabifx",
     "lang": "multi",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/icon.ico",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/main.ts"
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeUniqueStream/icon.ico",
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeUniqueStream/main.ts"
   },
   {
     "id": "animetosho",
@@ -684,14 +684,14 @@
   {
     "id": "animeav1",
     "name": "AnimeAV1",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeAV1/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
     "description": "Online streaming provider with hard subs and dubs in Spanish.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeAV1/icon.png",
     "lang": "es",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AnimeAV1/main.ts"
   },
   {
     "id": "Acgnx",
@@ -709,53 +709,53 @@
   {
     "id": "mal-unofficial",
     "name": "MyAnimeList",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MAL/manifest.json",
     "language": "typescript",
     "type": "custom-source",
     "description": "Implements MyAnimeList as a custom source via the unofficial Jikan API.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MAL/icon.png",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MAL/main.ts"
   },
   {
     "id": "simkl",
     "name": "Simkl",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/SIMKL/manifest.json",
     "language": "typescript",
     "type": "custom-source",
     "description": "Implements SIMKL as a custom source.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/icon.ico",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/SIMKL/icon.ico",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/SIMKL/main.ts"
   },
   {
     "id": "thepiratebay",
     "name": "ThePiratebay",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/TPB/manifest.json",
     "language": "typescript",
     "type": "anime-torrent-provider",
     "description": "Adds ThePirateBay on Seanime as a torrent provider.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/TPB/icon.png",
     "lang": "en",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/TPB/main.ts"
   },
   {
     "id": "mangabaka",
     "name": "MangaBaka",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaBaka/manifest.json",
     "language": "typescript",
     "type": "custom-source",
     "description": "Implements MangaBaka as a custom source.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaBaka/icon.png",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaBaka/main.ts"
   },
   {
     "id": "komiku",
@@ -784,15 +784,15 @@
   {
     "id": "oneko",
     "name": "Onekojs",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/oneko/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/oneko/manifest.json",
     "language": "typescript",
     "type": "plugin",
     "description": "Implements the famous Oneko.js script on Seanime",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/oneko/icon.png",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/oneko/icon.png",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/oneko/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/oneko/main.ts"
   },
   {
     "id": "Doom",
@@ -834,7 +834,7 @@
   {
     "id": "kagane-source",
     "name": "Kagane",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/KaganeSoruce/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/KaganeSoruce/manifest.json",
     "language": "typescript",
     "type": "custom-source",
     "description": "Implements Kagane as a custom source.",
@@ -842,7 +842,7 @@
     "icon": "",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/KaganeSoruce/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/KaganeSoruce/main.ts"
   },
   {
     "id": "anilist-favorites",
@@ -1038,15 +1038,15 @@
   {
     "id": "mangadex-source",
     "name": "MangaDex",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaDexSource/manifest.json",
     "language": "typescript",
     "type": "custom-source",
     "description": "Implements MangaDex as a custom source.",
     "author": "jabifx",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/icon.ico",
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaDexSource/icon.ico",
     "website": "",
     "lang": "multi",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/main.ts"
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/MangaDexSource/main.ts"
   },
   {
     "id": "anilist-autopause",
@@ -1064,14 +1064,14 @@
   {
     "id": "anidream",
     "name": "AniDream",
-    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AniDream/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
     "description": "Online streaming provider with soft/hard subs and dubs mainly in Italian.",
     "author": "jabifx",
     "lang": "it",
-    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/icon.jpg",
-    "payloadURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/main.ts"
+    "icon": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AniDream/icon.jpg",
+    "payloadURI": "https://raw.githubusercontent.com/dot-fx/seanime-extensions/master/src/AniDream/main.ts"
   },
   {
     "id": "myanimelistsync",
