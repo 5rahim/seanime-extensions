@@ -1285,5 +1285,41 @@
     "website": "https://github.com/bruuhim/MAL-Button-Seanime",
     "lang": "en",
     "payloadURI": "https://raw.githubusercontent.com/bruuhim/MAL-Button-Seanime/refs/heads/main/src/MAL.ts"
+  },
+  {
+    "id": "delete-watched-episodes",
+    "name": "Delete Watched Episodes",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Delete local files for episodes you have already watched to free up disk space",
+    "author": "Dadangdut33",
+    "icon": "https://raw.githubusercontent.com/dadangdut33/seanime-extensions/refs/heads/master/plugins/delete-watched-episodes/icon.png",
+    "website": "https://github.com/dadangdut33/seanime-extensions",
+    "lang": "multi",
+    "manifestURI": "https://raw.githubusercontent.com/dadangdut33/seanime-extensions/refs/heads/master/plugins/delete-watched-episodes/manifest.json",
+    "payloadURI": "https://raw.githubusercontent.com/dadangdut33/seanime-extensions/refs/heads/master/plugins/delete-watched-episodes/code.ts"
+  },
+  {
+    "id": "anitube",
+    "name": "AniTube",
+    "description": "AniTube is an online streaming provider for portugese subs.",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/anitube/manifest.json",
+    "author": "Pal",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "pt",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/anitube.png",
+    "payloadURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/anitube/provider.ts"
+  },
+  {
+    "id": "subtitle-engine",
+    "name": "Subtitle Engine",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/seanime-plugins/refs/heads/main/subtitle-engine/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Add subtitles of your preferred language and format scraped from multiple different sources to your current session.",
+    "author": "Thekingcrusher",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/seanime-plugins/refs/heads/main/subtitle-engine/icon.png",
+    "lang": "multi"
   }
 ]
