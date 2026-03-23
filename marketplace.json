@@ -511,18 +511,6 @@
     "website": ""
   },
   {
-    "id": "always-advanced-search",
-    "name": "Always Advanced Search",
-    "author": "SyntaxSama & Pal-droid",
-    "description": "Always use advanced search instead of the basic search feature.",
-    "type": "plugin",
-    "language": "typescript",
-    "lang": "EN",
-    "icon": "https://raw.githubusercontent.com/Pal-droid/advanced-search/refs/heads/main/2015046.png",
-    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/advanced-search/refs/heads/main/manifest.json",
-    "website": ""
-  },
-  {
     "id": "ilcorsaronero",
     "name": "IlCorsaroNero",
     "author": "Faddix",
@@ -713,18 +701,6 @@
     "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/KitsuSync/icon.png",
     "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/KitsuSync/kitsusync.json",
     "website": "https://github.com/nnotwen/n-seanime-extensions"
-  },
-  {
-    "id": "hianime",
-    "name": "HiAnime",
-    "author": "Thekingcrusher",
-    "description": "HiAnime is an online stream provider for both sub and dub with soft subs.",
-    "type": "onlinestream-provider",
-    "language": "typescript",
-    "lang": "en",
-    "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/hianime/logo.png",
-    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/hianime/manifest.json",
-    "website": ""
   },
   {
     "id": "myanimelistsync",
