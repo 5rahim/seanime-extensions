@@ -1383,7 +1383,7 @@
     "language": "typescript",
     "lang": "en",
     "icon": "https://raw.githubusercontent.com/Pal-droid/seanime-marketplace/refs/heads/main/animepahe.png",
-    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/seanime-marketplace/refs/heads/main/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/Seanime-contributions/Seanime-Providers/refs/heads/main/src/anime/animepahe/manifest.json",
     "website": ""
   },
   {
