@@ -1171,18 +1171,6 @@
     "lang": "multi"
   },
   {
-    "id": "YGG-Provider",
-    "name": "YGG Torrent",
-    "description": "YGG Provider for French content",
-    "author": "mlb11",
-    "manifestURI": "https://raw.githubusercontent.com/MLB-11/YGGTorrentSeanime/refs/heads/main/manifest.json",
-    "icon": "https://raw.githubusercontent.com/MLB-11/YGGTorrentSeanime/main/icon/ygg.webp",
-    "type": "anime-torrent-provider",
-    "language": "typescript",
-    "lang": "fr",
-    "website": "https://x.com/mlb__11"
-  },
-  {
     "id": "toonanime-online-streaming",
     "name": "FR | ToonAnime",
     "description": "ToonAnime est une extension Seanime en français pour regarder des anime doublés (VF) et sous-titrés (VOSTFR) depuis ToonAnime.biz, avec prise en charge multi‑serveurs et intégration de riches métadonnées.",
@@ -1275,7 +1263,7 @@
     "name": "Animepahe",
     "description": "Animepahe streaming provider for Seanime",
     "author": "ItsSkaiya \u0026 Pal",
-    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/seanime-marketplace/refs/heads/main/manifest.json",
+    "manifestURI": "https://raw.githubusercontent.com/Seanime-contributions/Seanime-Providers/refs/heads/main/src/anime/animepahe/manifest.json",
     "icon": "https://raw.githubusercontent.com/Pal-droid/seanime-marketplace/refs/heads/main/animepahe.png",
     "type": "onlinestream-provider",
     "language": "typescript",
@@ -1390,5 +1378,93 @@
     "type": "manga-provider",
     "language": "typescript",
     "lang": "es"
+  },
+  {
+    "id": "hipercool-provider",
+    "name": "HiperCool",
+    "description": "Manga provider for HiperCool - Portuguese manga/manhwa site",
+    "author": "Skrapt",
+    "manifestURI": "https://raw.githubusercontent.com/SKRAPT/Hipercool-Seanime/main/hipercool-provider.json",
+    "icon": "https://raw.githubusercontent.com/SKRAPT/Hipercool-Seanime/main/hipercool.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "pt"
+  },
+  {
+    "id": "nekobt",
+    "name": "nekoBT",
+    "description": "nekoBT torrent search provider for Seanime. Uses nekoBT search results and media fallback retries.",
+    "author": "bruuhim",
+    "manifestURI": "https://raw.githubusercontent.com/bruuhim/bruuhim-seanime-extensions/main/anime-torrent-providers/nekobt/nekobt.json",
+    "icon": "https://raw.githubusercontent.com/bruuhim/bruuhim-seanime-extensions/main/assets/nekobt.png",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "multi"
+  },
+  {
+    "id": "fouranimegg",
+    "name": "4Anime.gg",
+    "description": "4anime.gg as an online streaming provider, with subs and dubs support and blazing fast streaming.",
+    "author": "KoDevV2",
+    "manifestURI": "https://raw.githubusercontent.com/KoDevV2/online-streaming-providers/refs/heads/main/4anime/manifest.json",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "MULTI"
+  },
+  {
+    "id": "aniwatchtv",
+    "name": "AniWatch",
+    "description": "AniWatch is an online stream provider for both sub and dub with soft subs.",
+    "author": "Thekingcrusher",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/aniwatchtv/manifest.json",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/aniwatchtv/logo.png",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "en"
+  },
+  {
+    "id": "animetoast",
+    "name": "AnimeToast",
+    "description": "AnimeToast is an online streaming provider for german sub/dubs.",
+    "author": "Pal",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/animetoast/manifest.json",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/animetoast.png",
+    "type": "onlinestream-provider",
+    "language": "javascript",
+    "lang": "de"
+  },
+  {
+    "id": "random-entry",
+    "name": "Random Entry",
+    "description": "Open a random media entry.",
+    "author": "nnotwen",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Random%20Entry/re.json",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Random%20Entry/icon.png",
+    "type": "plugin",
+    "language": "typescript",
+    "lang": "en",
+    "website": "https://github.com/nnotwen/n-seanime-extensions"
+  },
+  {
+    "id": "jkanime",
+    "name": "JkAnime",
+    "description": "JkAnime is an online streaming provider for spanish subs.",
+    "author": "mohaisreal",
+    "manifestURI": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/JkAnime/manifest.json",
+    "icon": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/JkAnime/image.png",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "allmangaanime",
+    "name": "AllManga (Anime)",
+    "description": "AllManga (Anime) streaming provider for Seanime",
+    "author": "Pal",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/anime/allmanga/manifest.json",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/seanime-providers/refs/heads/main/public/allmanga.png",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "en"
   }
 ]
