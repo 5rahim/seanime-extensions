@@ -1380,7 +1380,7 @@
     "lang": "es"
   },
   {
-    "id": "hipercool-provider",
+    "id": "hipercool-provider-v3",
     "name": "HiperCool",
     "description": "Manga provider for HiperCool - Portuguese manga/manhwa site",
     "author": "Skrapt",
@@ -1451,7 +1451,7 @@
     "description": "JkAnime is an online streaming provider for spanish subs.",
     "author": "mohaisreal",
     "manifestURI": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/JkAnime/manifest.json",
-    "icon": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/JkAnime/image.png",
+    "icon": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/JkAnime/favicon.ico",
     "type": "onlinestream-provider",
     "language": "typescript",
     "lang": "es"
@@ -1466,5 +1466,71 @@
     "type": "onlinestream-provider",
     "language": "typescript",
     "lang": "en"
+  },
+  {
+    "id": "mangaflix-ptbr",
+    "name": "MangaFlix",
+    "description": "Manga provider for MangaFlix using API - Portuguese manga/manhwa Website",
+    "author": "Skrapt",
+    "manifestURI": "https://raw.githubusercontent.com/SKRAPT/MangaFlix/refs/heads/main/mangaflix.json",
+    "icon": "https://raw.githubusercontent.com/SKRAPT/MangaFlix/main/MangaFlix.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "pt"
+  },
+  {
+    "id": "senshi",
+    "name": "Senshi",
+    "description": "Senshi is an online stream provider for both hardsub and dub.",
+    "author": "Thekingcrusher",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/senshi/manifest.json",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/senshi/logo.png",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "en"
+  },
+  {
+    "id": "leercapitulo",
+    "name": "LeerCapitulo",
+    "description": "LeerCapitulo as a Spanish-language manga provider for Seanime, supporting manga, manhwa, and manhua.",
+    "author": "branrgx",
+    "manifestURI": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/LeerCapitulo/manifest.json",
+    "icon": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/LeerCapitulo/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "mangaoni",
+    "name": "MangaOni",
+    "description": "Proveedor de manga en español para MangaOni.",
+    "author": "mohaisreal",
+    "manifestURI": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/MangaOni/manifest.json",
+    "icon": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/MangaOni/favicon.ico",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "capibaratraductor",
+    "name": "CapibaraTraductor",
+    "description": "El Hub de tus Scans Favoritos. Proveedor de manga en español.",
+    "author": "mohaisreal",
+    "manifestURI": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/CapibaraTraductor/manifest.json",
+    "icon": "https://raw.githubusercontent.com/mohaisreal/seanime-ext/main/src/CapibaraTraductor/faviconcaptrad.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "ptscans-provider",
+    "name": "PT Scans",
+    "description": "Unified manga provider - Portuguese manga/manhwa Websites",
+    "author": "Skrapt",
+    "manifestURI": "https://raw.githubusercontent.com/SKRAPT/PT-Scans/main/ptscans-provider.json",
+    "icon": "https://raw.githubusercontent.com/SKRAPT/PT-Scans/main/upscan.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "pt"
   }
 ]
