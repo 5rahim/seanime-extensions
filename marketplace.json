@@ -1527,10 +1527,65 @@
     "name": "PT Scans",
     "description": "Unified manga provider - Portuguese manga/manhwa Websites",
     "author": "Skrapt",
-    "manifestURI": "https://raw.githubusercontent.com/SKRAPT/PT-Scans/main/ptscans-provider.json",
+    "manifestURI": "https://raw.githubusercontent.com/SKRAPT/PT-Scans/refs/heads/main/ptscans-provider.json",
     "icon": "https://raw.githubusercontent.com/SKRAPT/PT-Scans/main/upscan.png",
     "type": "manga-provider",
-    "language": "typescript",
+    "language": "javascript",
     "lang": "pt"
+  },
+  {
+    "id": "nartag",
+    "name": "Nartag",
+    "description": "A Seanime extension that brings Spanish-language manga, manhwa, and manhua through Nartag.",
+    "author": "branrgx",
+    "manifestURI": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/Nartag/manifest.json",
+    "icon": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/Nartag/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "uchuujin-projects",
+    "name": "Uchuujin Projects",
+    "description": "Read Spanish manga and Asian comics from Uchuujin Projects right in Seanime.",
+    "author": "branrgx",
+    "manifestURI": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/UchuujinProjects/manifest.json",
+    "icon": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/UchuujinProjects/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "mh-scans",
+    "name": "MH Scans",
+    "description": "MHScans integration bringing Spanish-translated manhua and manhwa.",
+    "author": "branrgx",
+    "manifestURI": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/MhScans/manifest.json",
+    "icon": "https://raw.githubusercontent.com/branrgx/seanime-extensions/main/src/MhScans/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "mangas-in",
+    "name": "Mangas.in",
+    "description": "Spanish manga, manhwa, and manhua library from Mangas.In for Seanime.",
+    "author": "branrgx",
+    "manifestURI": "https://raw.githubusercontent.com/branrgx/seanime-extensions/master/src/MangasIn/manifest.json",
+    "icon": "https://raw.githubusercontent.com/branrgx/seanime-extensions/master/src/MangasIn/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
+  },
+  {
+    "id": "skip-data-manager",
+    "name": "Skip Data Manager",
+    "description": "Fetches intro/outro skip timestamps from other sources and injects them into Seanime's integrated player.",
+    "author": "Thekingcrusher",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/seanime-plugins/refs/heads/main/skip-data-manager/manifest.json",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/seanime-plugins/refs/heads/main/skip-data-manager/logo.png",
+    "type": "plugin",
+    "language": "typescript",
+    "lang": "multi"
   }
 ]
