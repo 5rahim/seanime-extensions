@@ -1,0 +1,24 @@
+{
+  "id": "custom-cover-images",
+  "name": "Custom Cover Images",
+  "version": "1.0.1",
+  "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/custom-cover-images/custom-cover-images.json",
+  "language": "typescript",
+  "type": "plugin",
+  "description": "Customize the cover images of anime and manga in your AniList collection.",
+  "author": "Seanime",
+  "icon": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/custom-cover-images/icon.png",
+  "website": "https://github.com/5rahim/seanime-extensions",
+  "lang": "multi",
+  "payload": "",
+  "payloadURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/custom-cover-images/code.ts",
+  "plugin": {
+    "version": "1",
+    "permissions": {
+      "scopes": [
+        "storage",
+        "anilist"
+      ]
+    }
+  }
+}
