@@ -1,0 +1,28 @@
+{
+  "id": "noctalia-theme",
+  "name": "Noctalia Theme",
+  "version": "1.0.0",
+  "language": "typescript",
+  "type": "plugin",
+  "description": "Applies the active Noctalia palette to Seanime, converting it into Seanime's own brand and grey scales.",
+  "author": "Below-Z3R0",
+  "icon": "https://raw.githubusercontent.com/Below-Z3R0/seanime-noctalia-theme/main/plugins/noctalia-theme/icon.png",
+  "website": "https://github.com/Below-Z3R0/seanime-noctalia-theme",
+  "lang": "multi",
+  "payloadURI": "https://raw.githubusercontent.com/Below-Z3R0/seanime-noctalia-theme/main/plugins/noctalia-theme/code.ts",
+  "plugin": {
+    "version": "1",
+    "permissions": {
+      "scopes": [
+        "system",
+        "storage"
+      ],
+      "allow": {
+        "readPaths": [
+          "$HOME/.local/state/noctalia/seanime/*",
+          "$HOME/.config/noctalia/seanime/*"
+        ]
+      }
+    }
+  }
+}
