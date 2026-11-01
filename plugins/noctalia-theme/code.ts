@@ -21,7 +21,21 @@
 // Colour maths — sRGB <-> OKLab/OKLCH
 // ---------------------------------------------------------------------------
 
-const STEPS = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+
+
+function init() {
+    $ui.register((ctx) => {
+    const DEFAULT_PATH = "~/.local/state/noctalia/seanime/palette.css"
+    const POLL_INTERVAL_MS = 2000
+    const POLL_GUARD_MS = 8000
+    const PRESENCE_INTERVAL_MS = 5000
+    const PATH_KEY = "noctaliaTheme.palettePath"
+    const STATUS_KEY = "noctaliaTheme.status"
+    const STYLE_SELECTOR = '[data-noctalia="1"]'
+const ICON_URL =
+    "https://raw.githubusercontent.com/Below-Z3R0/seanime-noctalia-theme/main/plugins/noctalia-theme/icon.png"
+
+    const STEPS = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
 
 // Tailwind v4 reference ramp, OKLCH lightness and chroma per step, anchored
 // on its own 500. The base colour keeps its identity at 500; every other
@@ -116,15 +130,19 @@ function oklchToRgbInGamut(L: number, C: number, H: number): [number, number, nu
     return oklchToRgb(L, low, H)
 }
 
+/** Hex -> OKLCH in one step, or null when the value is not a colour. */
+function oklchOf(hex: string): [number, number, number] | null {
+    const rgb = parseHex(hex)
+    return rgb ? rgbToOklch(rgb[0], rgb[1], rgb[2]) : null
+}
+
 function rgbToChannels(rgb: [number, number, number]): string {
     return `${Math.round(rgb[0] * 255)} ${Math.round(rgb[1] * 255)} ${Math.round(rgb[2] * 255)}`
 }
 
 /** The brand scale: the base colour keeps its identity at 500. */
-function brandScale(baseHex: string): string[] {
-    const rgb = parseHex(baseHex)
-    if (!rgb) return []
-    const [baseL, baseC, hue] = rgbToOklch(rgb[0], rgb[1], rgb[2])
+function brandScale(oklch: [number, number, number]): string[] {
+    const [baseL, baseC, hue] = oklch
     return STEPS.map((_, index) => {
         const L = clamp(baseL + (REF_L[index] - REF_500_L), 0.02, 0.99)
         const C = baseC * (REF_C[index] / REF_500_C)
@@ -188,12 +206,13 @@ function buildCss(tokens: Record<string, string>): string {
         declarations.push(`  ${variable}: ${value} !important;`)
     }
 
+    // Parsed and converted once: both the hue and the brand ramp need it.
     const primary = role("primary")
-    const primaryRgb = primary ? parseHex(primary) : null
-    const hue = primaryRgb ? rgbToOklch(primaryRgb[0], primaryRgb[1], primaryRgb[2])[2] : 0
+    const primaryOklch = primary ? oklchOf(primary) : null
+    const hue = primaryOklch ? primaryOklch[2] : 0
 
-    if (primary && primaryRgb) {
-        const scale = brandScale(primary)
+    if (primaryOklch) {
+        const scale = brandScale(primaryOklch)
         STEPS.forEach((step, index) => {
             if (scale[index]) declarations.push(`  --color-brand-${step}: ${scale[index]} !important;`)
         })
@@ -235,59 +254,117 @@ function hash(text: string): string {
 // Plugin
 // ---------------------------------------------------------------------------
 
-//@ts-ignore
-function init() {
-    $ui.register((ctx) => {
-        const STYLE_ID = "noctalia-theme"
-        const DEFAULT_PATH = "~/.local/state/noctalia/seanime/palette.css"
-        const POLL_INTERVAL_MS = 2000
-        const FETCH_TIMEOUT_S = 5
-        const CLIENT_FAILURES_BEFORE_BACKOFF = 3
-        const CLIENT_BACKOFF_MS = 30000
-        const PATH_KEY = "noctaliaTheme.palettePath"
-        const ICON_URL =
-            "https://raw.githubusercontent.com/Below-Z3R0/seanime-noctalia-theme/main/plugins/noctalia-theme/icon.png"
-
-        const status = ctx.state("Waiting for the palette file…")
+        const status = ctx.state("Waiting for the palette…")
         const pathRef = ctx.fieldRef<string>(DEFAULT_PATH)
 
         let lastSignature = ""
-        let lastCss = ""
         let lastMode = ""
+        let lastError = ""
+        let homeDir = ""
         let polling = false
-        let clientFailures = 0
-        let clientRetryAt = 0
+        let pollStartedAt = 0
+        let lastPresenceAt = 0
+
+        let lastStatus = ""
 
         function report(message: string) {
+            // The status is written to storage and the database: skip the write
+            // when nothing changed, otherwise an idle poll churns both.
+            if (message === lastStatus) return
+            lastStatus = message
             status.set(message)
-            $storage.set("noctaliaTheme.status", message)
-        }
-
-        const tray = ctx.newTray({ iconUrl: ICON_URL, withContent: true, width: "380px" })
-
-        function resolvePath(path: string): string {
-            if (path.startsWith("~/")) {
-                return $os.homeDir().replace(/\/+$/, "") + path.slice(1)
+            try {
+                $storage.set(STATUS_KEY, message)
+            } catch {
+                // The status is a convenience; failing to store it is not fatal.
             }
-            return path
         }
 
-        async function removeStyle() {
-            const previous = await ctx.dom.queryOne("#" + STYLE_ID)
-            if (previous) previous.remove()
+        report("Plugin loaded")
+
+        function createTray(): void {
+            try {
+                const tray = ctx.newTray({ iconUrl: ICON_URL, withContent: true, width: "380px" })
+                tray.render(() =>
+                    tray.div([
+                        tray.stack(
+                            [
+                                tray.text("Noctalia Theme", { style: { fontWeight: "600", fontSize: "14px" } }),
+                                tray.text(
+                                    "Applies the palette written by the Noctalia Seanime template, including Seanime's own brand and grey scales.",
+                                    { style: { color: "#888", fontSize: "12px" } },
+                                ),
+                                tray.input({
+                                    label: "Palette file",
+                                    placeholder: DEFAULT_PATH,
+                                    fieldRef: pathRef,
+                                    style: { fontSize: "12px" },
+                                }),
+                                tray.text(status.get(), { style: { color: "#666", fontSize: "11px" } }),
+                            ],
+                            { gap: 1 },
+                        ),
+                    ]),
+                )
+            } catch {
+                // The tray is a desktop affordance; the theme still applies without it.
+            }
         }
 
-        /** Updates the stylesheet in place; only creates it the first time. */
+        let styleId: string | null = null
+
+        /** True when this client still carries a stylesheet of ours. */
+        async function hasStyle(): Promise<boolean> {
+            if (!styleId) return false
+            try {
+                const element = ctx.dom.asElement(styleId)
+                return (await element.getText()).length > 0
+            } catch {
+                styleId = null
+                return false
+            }
+        }
+
+        /**
+         * Removes every stylesheet we own.
+         *
+         * The element id cannot be used to find them: the client keeps its own
+         * element -> id map, so an id only exists for the session that created
+         * it. A data attribute survives plugin restarts, and the element
+         * returned by the query carries a usable handle.
+         */
+        async function clearStyle(): Promise<void> {
+            styleId = null
+            for (let i = 0; i < 8; i++) {
+                const element = await ctx.dom.queryOne(STYLE_SELECTOR)
+                if (!element) return
+                element.remove()
+            }
+        }
+
+        /**
+         * Replaces the stylesheet.
+         *
+         * The client keeps its own element -> id map, so the id it generates on
+         * creation is the only handle that works: renaming or re-querying it
+         * makes later calls land nowhere. The write is read back to confirm it.
+         */
         async function applyCss(css: string) {
             const head = await ctx.dom.queryOne("head")
-            if (!head) return
-            let style: DOMElement | null = await ctx.dom.queryOne("#" + STYLE_ID)
-            if (!style) {
-                style = await ctx.dom.createElement("style")
-                style.setAttribute("id", STYLE_ID)
-                head.append(style)
-            }
+            if (!head) throw new Error("DOM head not found")
+
+            await clearStyle()
+
+            const style = await ctx.dom.createElement("style")
+            head.append(style)
             style.setText(css)
+
+            const written = await style.getText()
+            if (written.length !== css.length) {
+                throw new Error(`stylesheet mismatch (${written.length}/${css.length})`)
+            }
+            style.setDataAttribute("noctalia", "1")
+            styleId = style.id
         }
 
         /** Keeps the document's colour scheme in step with the Noctalia theme. */
@@ -303,120 +380,136 @@ function init() {
         }
 
         /**
-         * Reads the palette file. The local path is tried first so the palette
-         * comes from the machine the client runs on; the server-side read is
-         * the fallback for clients that cannot reach their own filesystem.
-         *
-         * A client that cannot reach its own files is not probed on every
-         * tick: after a few failures the probe backs off, otherwise every
-         * poll would spend a request on a path that cannot work.
+         * The paths to try, in order. A "~" path is resolved against the server's
+         * home, so the same setting works whether Seanime runs on the desktop
+         * or in a container.
          */
-        async function readPalette(path: string): Promise<{ text: string; source: string } | null> {
-            if (Date.now() >= clientRetryAt) {
-                try {
-                    const response = await ctx.fetch("file://" + path, { timeout: FETCH_TIMEOUT_S })
-                    if (response.ok) {
-                        clientFailures = 0
-                        return { text: response.text(), source: "client" }
-                    }
-                } catch (error) {
-                    // Not reachable from the client: fall through to the server.
-                }
-                clientFailures++
-                if (clientFailures >= CLIENT_FAILURES_BEFORE_BACKOFF) {
-                    clientRetryAt = Date.now() + CLIENT_BACKOFF_MS
-                }
+        function pathCandidates(configured: string): string[] {
+            const candidates = [configured]
+            if (configured.startsWith("~/")) {
+                if (!homeDir) homeDir = $os.homeDir().replace(/\/+$/, "")
+                candidates.push(homeDir + configured.slice(1))
             }
+            return candidates.filter((path, index) => path && candidates.indexOf(path) === index)
+        }
+
+        /**
+         * Reads the palette file. The read happens on the server: the file
+         * lives next to the Seanime data, and the manifest declares the paths
+         * the plugin is allowed to read.
+         */
+        function readPalette(path: string): { text: string; path: string } | null {
             try {
                 const bytes = $os.readFile(path)
-                return { text: bytesToString(bytes), source: "server" }
+                return { text: bytesToString(bytes), path }
             } catch (error) {
+                lastError = `read failed: ${(error as Error).message}`
                 return null
             }
         }
 
-        async function poll() {
-            if (polling) return
-            polling = true
-            try {
-                await refresh()
-            } finally {
-                polling = false
-            }
-        }
-
-        async function refresh() {
+        async function refresh(): Promise<void> {
             const configured = (pathRef.current || DEFAULT_PATH).trim()
-            const path = resolvePath(configured)
+            lastError = ""
 
-            const palette = await readPalette(path)
+            let palette: { text: string; path: string } | null = null
+            for (const candidate of pathCandidates(configured)) {
+                palette = readPalette(candidate)
+                if (palette) break
+            }
             if (!palette) {
-                // The file is not there (yet): drop any theme we applied earlier.
                 if (lastSignature !== "") {
                     lastSignature = ""
-                    lastCss = ""
-                    await removeStyle()
+                    await clearStyle()
                 }
-                report(`Not found: ${configured}`)
+                report(`Not found: ${configured}${lastError ? ` (${lastError})` : ""}`)
                 return
             }
 
+            // The stylesheet lives in the client's DOM: a reloaded client has
+            // none, even when the palette itself did not change. Probing costs a
+            // round trip, so an unchanged palette is only re-probed periodically.
             const signature = hash(palette.text)
-            if (signature === lastSignature) return
+            const samePalette = signature === lastSignature
+            if (samePalette && Date.now() - lastPresenceAt <= PRESENCE_INTERVAL_MS) return
+
+            const present = samePalette ? await hasStyle() : false
+            lastPresenceAt = Date.now()
+            if (samePalette && present) return
             lastSignature = signature
 
             const tokens = parseTokens(palette.text)
             const css = buildCss(tokens)
             if (!css) {
-                report(`No palette roles in ${configured}`)
+                report("No palette roles in the file")
                 return
             }
-            if (css === lastCss) return
-            lastCss = css
-
-            await applyCss(css)
-            await syncMode(tokens["nt-mode"])
-            report(`Applied via ${palette.source} · ${configured}`)
+            try {
+                await applyCss(css)
+                await syncMode(tokens["nt-mode"])
+            } catch (error) {
+                report(`Apply failed: ${(error as Error).message}`)
+                return
+            }
+            report(`Applied · ${palette.path}`)
         }
 
-        const savedPath = $storage.get<string>(PATH_KEY)
-        if (savedPath) pathRef.setValue(savedPath)
+        async function poll(): Promise<void> {
+            // A DOM call with no client attached never settles. The guard lets
+            // the next tick start a fresh attempt instead of deadlocking.
+            const now = Date.now()
+            if (polling && now - pollStartedAt < POLL_GUARD_MS) return
+            polling = true
+            pollStartedAt = now
+            try {
+                await refresh()
+            } catch (error) {
+                report(`poll failed: ${(error as Error).message}`)
+            } finally {
+                polling = false
+            }
+        }
 
-        pathRef.onValueChange((value: string) => {
-            $storage.set(PATH_KEY, value)
-            lastSignature = ""
-            clientFailures = 0
-            clientRetryAt = 0
+        /** Runs one setup step: a failure is reported but never aborts the rest. */
+        function setup(step: string, run: () => void) {
+            try {
+                run()
+                report(`setup: ${step} ok`)
+            } catch (error) {
+                report(`${step} unavailable: ${(error as Error).message}`)
+            }
+        }
+
+        setup("tray", () => createTray())
+
+        setup("storage", () => {
+            const savedPath = $storage.get<string>(PATH_KEY)
+            if (savedPath) pathRef.setValue(savedPath)
         })
 
-        tray.render(() =>
-            tray.div([
-                tray.stack(
-                    [
-                        tray.text("Noctalia Theme", { style: { fontWeight: "600", fontSize: "14px" } }),
-                        tray.text(
-                            "Applies the palette written by the Noctalia Seanime template, including Seanime's own brand and grey scales.",
-                            { style: { color: "#888", fontSize: "12px" } },
-                        ),
-                        tray.input({
-                            label: "Palette file",
-                            placeholder: DEFAULT_PATH,
-                            fieldRef: pathRef,
-                            style: { fontSize: "12px" },
-                        }),
-                        tray.text(status.get(), { style: { color: "#666", fontSize: "11px" } }),
-                    ],
-                    { gap: 1 },
-                ),
-            ]),
-        )
-
-        ctx.dom.onReady(() => {
-            void poll()
+        setup("path", () => {
+            pathRef.onValueChange((value: string) => {
+                $storage.set(PATH_KEY, value)
+                lastSignature = ""
+            })
         })
 
-        ctx.setInterval(() => {
-            void poll()
-        }, POLL_INTERVAL_MS)
+        setup("dom ready", () => ctx.dom.onReady(reapply))
+
+        // A client that reloads (or a second client) re-claims the main tab.
+        // onMainTabReady is exposed by the runtime but missing from the
+        // published types, hence the cast.
+        setup("main tab ready", () => {
+            const dom = ctx.dom as unknown as { onMainTabReady?: (cb: () => void) => void }
+            dom.onMainTabReady?.(reapply)
+        })
+
+        // The interval lives in the plugin context (server side), so the palette
+        // is re-read even when no client is attached yet.
+        setup("polling", () => {
+            ctx.setInterval(() => {
+                void poll()
+            }, POLL_INTERVAL_MS)
+        })
     })
 }
