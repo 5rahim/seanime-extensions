@@ -151,13 +151,19 @@ function brandScale(oklch: [number, number, number]): string[] {
 }
 
 /**
- * The grey scale. It stays absolute — Seanime's own defaults read from it
- * (`--paper` is grey-950, `--border` is grey-200), so rescaling it to the
- * theme would move every surface away from what the app expects. Only the
- * hue is borrowed from the palette, at a chroma low enough to stay neutral.
+ * The grey scale. Seanime reads its own surfaces from it (`--paper` is
+ * grey-950, `--border` is grey-200) and ships no light theme: its `:root`
+ * is already dark and only `.dark` is defined, so a fixed ramp keeps every
+ * `bg-gray-900` dark whatever the palette says. The ramp therefore runs from
+ * the palette's text colour at grey-50 to its surface at grey-950, which
+ * gives a light scale for a light palette and a dark one for a dark palette.
  */
-function greyScale(hue: number): string[] {
-    return GREY_L.map((L) => rgbToChannels(oklchToRgbInGamut(L, GREY_CHROMA, hue)))
+function greyScale(hue: number, textL: number, surfaceL: number): string[] {
+    const range = GREY_L[0] - GREY_L[GREY_L.length - 1]
+    return GREY_L.map((L) => {
+        const depth = range === 0 ? 0 : (GREY_L[0] - L) / range
+        return rgbToChannels(oklchToRgbInGamut(textL + (surfaceL - textL) * depth, GREY_CHROMA, hue))
+    })
 }
 
 // ---------------------------------------------------------------------------
@@ -219,7 +225,12 @@ function buildCss(tokens: Record<string, string>): string {
         if (scale[5]) declarations.push(`  --color-brand-default: ${scale[5]} !important;`)
     }
 
-    const scale = greyScale(hue)
+    const surfaceToken = oklchOf(role("surface") || "")
+    const onSurfaceToken = oklchOf(role("on_surface") || "")
+    // Without both ends there is nothing to stretch between: keep the reference ramp.
+    const textL = onSurfaceToken ? onSurfaceToken[0] : GREY_L[0]
+    const surfaceL = surfaceToken ? surfaceToken[0] : GREY_L[GREY_L.length - 1]
+    const scale = greyScale(hue, textL, surfaceL)
     STEPS.forEach((step, index) => {
         if (scale[index]) declarations.push(`  --color-gray-${step}: ${scale[index]} !important;`)
     })
