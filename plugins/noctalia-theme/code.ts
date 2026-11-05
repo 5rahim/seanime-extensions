@@ -152,8 +152,8 @@ function brandScale(oklch: [number, number, number]): string[] {
 
 /**
  * The grey scale. Seanime reads its own surfaces from it (`--paper` is
- * grey-950, `--border` is grey-200) and ships no light theme: its `:root`
- * is already dark and only `.dark` is defined, so a fixed ramp keeps every
+ * grey-950, `--border` is grey-200) and ships no light theme: its `:root` is
+ * already dark and only `.dark` is defined, so a fixed ramp keeps every
  * `bg-gray-900` dark whatever the palette says. The ramp therefore runs from
  * the palette's text colour at grey-50 to its surface at grey-950, which
  * gives a light scale for a light palette and a dark one for a dark palette.
@@ -225,11 +225,11 @@ function buildCss(tokens: Record<string, string>): string {
         if (scale[5]) declarations.push(`  --color-brand-default: ${scale[5]} !important;`)
     }
 
-    const surfaceToken = oklchOf(role("surface") || "")
-    const onSurfaceToken = oklchOf(role("on_surface") || "")
     // Without both ends there is nothing to stretch between: keep the reference ramp.
-    const textL = onSurfaceToken ? onSurfaceToken[0] : GREY_L[0]
-    const surfaceL = surfaceToken ? surfaceToken[0] : GREY_L[GREY_L.length - 1]
+    const surfaceOklch = oklchOf(role("surface") || "")
+    const onSurfaceOklch = oklchOf(role("on_surface") || "")
+    const textL = onSurfaceOklch ? onSurfaceOklch[0] : GREY_L[0]
+    const surfaceL = surfaceOklch ? surfaceOklch[0] : GREY_L[GREY_L.length - 1]
     const scale = greyScale(hue, textL, surfaceL)
     STEPS.forEach((step, index) => {
         if (scale[index]) declarations.push(`  --color-gray-${step}: ${scale[index]} !important;`)
