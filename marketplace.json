@@ -775,5 +775,18 @@
     "language": "typescript",
     "lang": "en",
     "website": "https://www.mangaupdates.com/"
+  },
+  {
+    "id": "noctalia-theme",
+    "name": "Noctalia Theme",
+    "description": "Applies the active Noctalia palette to Seanime, converting it into Seanime's own brand and grey scales.",
+    "author": "Below-Z3R0",
+    "manifestURI": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/noctalia-theme/noctalia-theme.json",
+    "icon": "https://raw.githubusercontent.com/5rahim/seanime-extensions/main/plugins/noctalia-theme/icon.png",
+    "type": "plugin",
+    "language": "typescript",
+    "lang": "multi",
+    "website": "https://github.com/Below-Z3R0/seanime-noctalia-theme"
+  
   }
 ]
